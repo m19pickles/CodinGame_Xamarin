@@ -11,53 +11,29 @@ class Solution
 	{
 		int L = int.Parse(Console.ReadLine());
 		int H = int.Parse(Console.ReadLine());
-		string T = Console.ReadLine();
-		var letterList = new List<string>();
+		string T = Console.ReadLine().ToUpper();
 
 
 		for (int i = 0; i < H; i++)
 		{
 			string ROW = (Console.ReadLine());
-
-			//split each line on the required number of char to create array of characters
-			int startPos = 0;
-			for (int letterGroup = 0; letterGroup < ROW.Length / L; letterGroup++)
+			//loop through all chars in string
+			foreach (char c in T)
 			{
-				if (i == 0)
+				//determine start pos
+				int index = c;
+				if (index >= 'A' && index <= 'Z')
 				{
-					letterList.Add(ROW.Substring(startPos, L));
+					index = c - 'A';
 				}
 				else
 				{
-					letterList[letterGroup] += ROW.Substring(startPos, L);
+					index = 'Z' - 'A' + 1;
 				}
-				startPos += L;
+				//print output
+				Console.Write(ROW.Substring(index * L, L));
 			}
+			Console.WriteLine();
 		}
-		//Find indexs of letters
-		var stringReconstruct = new List<string>();
-		foreach (char c in T)
-		{
-			int pos = 26;
-			if (char.ToUpper(c) >= 65 && char.ToUpper(c) <= 90)
-			{
-				pos = char.ToUpper(c) - 65;
-			}
-			//Creates list of only letters needed
-			stringReconstruct.Add(letterList[pos]);
-		}
-		string[] charOutPut = new string[H];
-		int lineNum = 0;
-		for (int i = 0; i < H; i++)
-		{
-			for (int j = 0; j < stringReconstruct.Count; j++)
-			{
-				charOutPut[i] += stringReconstruct[j].Substring(lineNum, L);
-			}
-			lineNum += L;
-			//print output
-			Console.WriteLine("{0}", charOutPut[i]);
-		}
-
 	}
 }
