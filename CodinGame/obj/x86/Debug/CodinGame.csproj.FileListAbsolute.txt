@@ -1,0 +1,4 @@
+C:\Users\M19Pickles\Documents\Projects\CodinGame\CodinGame\bin\Debug\CodinGame.exe
+C:\Users\M19Pickles\Documents\Projects\CodinGame\CodinGame\bin\Debug\CodinGame.pdb
+C:\Users\M19Pickles\Documents\Projects\CodinGame\CodinGame\obj\x86\Debug\CodinGame.exe
+C:\Users\M19Pickles\Documents\Projects\CodinGame\CodinGame\obj\x86\Debug\CodinGame.pdb

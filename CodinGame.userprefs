@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{BD4CB84D-6AFC-4089-8DD3-178BC592215C}|Unity">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CodinGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodinGame\E_ASCII-Art.cs">
+    <Files>
+      <File FileName="CodinGame\E_ASCII-Art.cs" Line="18" Column="38" />
+      <File FileName="CodinGame\Program.cs" Line="15" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
